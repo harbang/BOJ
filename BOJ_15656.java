@@ -20,7 +20,6 @@ public class Main {
         
         N = Integer.parseInt(sc.next());
         M = Integer.parseInt(sc.next());
-        
         list = new ArrayList<>();
         
         for(int i=0; i<N; i++) {
