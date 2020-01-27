@@ -1,4 +1,4 @@
-// [BOJ] 백준 15657 N과 M (7)
+// [BOJ] 백준 15657 N과 M(7)
 // 문제: https://www.acmicpc.net/problem/15656
 // 풀이: https://octorbirth.tistory.com/63
 import java.io.BufferedWriter;
@@ -48,7 +48,6 @@ public class Main {
 		for(int i=0; i<N; i++) {
 			answer.add(list.get(i));
 			permutation(answer);
-			
 			// 방금 넣었던 것을 제거하고 다음 for문을 돌수 있도록
 			answer.remove(answer.size()-1);
 		}
