@@ -1,4 +1,4 @@
-// [BOJ] 백준 15657 N과 M (8)
+  // [BOJ] 백준 15657 N과 M (8)
 // 문제: https://www.acmicpc.net/problem/15657
 // 풀이: https://octorbirth.tistory.com/63
 
