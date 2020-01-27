@@ -1,7 +1,6 @@
 // [BOJ] 백준 15663 N과 M(9)
 // 문제: https://www.acmicpc.net/problem/15663
 // 풀이: https://octorbirth.tistory.com/63
-
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
