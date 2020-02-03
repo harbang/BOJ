@@ -1,5 +1,5 @@
-[BOJ] 백준 14501 퇴사
-https://www.acmicpc.net/problem/14501
+// [BOJ] 백준 14501 퇴사
+// https://www.acmicpc.net/problem/14501
 
 import java.util.Scanner;
 
