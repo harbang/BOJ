@@ -72,10 +72,8 @@ public class Main {
             return;
         }
 
-
         archerList.add(castle.get(idx));
         combination(idx + 1, archerList);
-
 
         // 뽑지 않은 경우, 위에서 넣었던것을 무효화시키고 다시 뽑는다. 다음 원소로 재귀진행
         // 넣고 빼야 조합이 오름차순으로 진행된다. 물론 이 문제는 굳이 그렇게까지 할 필요는 없다.
