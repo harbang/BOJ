@@ -30,18 +30,15 @@ public class Main {
         }
 
         for(int i=N-2; i>=0; i--) {
-            // 해당일자의 상담 소요시간이 퇴사 이후가 되서는 안된다.
-            // 퇴사기간내 가능한(종료되는) 상담 중에서 해당 일자의 상담을 진행할지 말지 선택
+            // 퇴사기간내 가능한 상담 중에서 해당 일자 상담 선택 여부 결정
             if(i + (time[i]-1) < N) {
-                
-                // 퇴사이전까지는 상담이 종료되지만 배열 크기상(수식상) 퇴사 이후의 dp를 고려하게 되므로 배제
-                int temp = 0;
-                if(i + time[i] < N) temp = dp[i + time[i]];
-                
-                dp[i] = Math.max(dp[i+1], pay[i] + temp);
-                
-            }else {
-                // 퇴사 이후에도 진행되어야 한다면 dp[i+1]값을 그대로 가진다.
+                int elapsedTime = 0;
+                if(i + time[i] < N) {
+                	elapsedTime = dp[i + time[i]];
+                }
+                dp[i] = Math.max(dp[i+1], pay[i] + elapsedTime);
+            }
+            else { // 퇴사 이후 진행되는 상담인 경우
                 dp[i] = dp[i+1];
             }
         }
