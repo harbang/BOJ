@@ -56,14 +56,12 @@ public class Main {
             }
             
         }
-        
         // 꽉찬 리스트가 아닌 기존 리스트에 (중간)진입하지 못한 경우
         // 맨 마지막 랭킹 점수가 된다.
         if(N < P) {
             System.out.println(N+1);
             return;
         }
-        
         // 그 외의 경우는 어떤 이유든 랭킹 진입에 실패한 경우
         System.out.println("-1");
     }
